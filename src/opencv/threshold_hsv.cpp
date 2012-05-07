@@ -22,10 +22,10 @@ int main(int argc, char* argv[])
 
 	IplImage* threshold_sum = cvCreateImage(cvGetSize(frame),IPL_DEPTH_8U,1);
 
-	CvScalar hsv_min = cvScalar(38, 50, 170, 0);
-	CvScalar hsv_max = cvScalar(80, 100, 255, 0);
-	CvScalar hsv_min2 = cvScalar(170, 50, 170, 0);
-	CvScalar hsv_max2 = cvScalar(256, 180, 256, 0);
+	CvScalar hsv_min = cvScalar(0, 70, 100, 0);
+	CvScalar hsv_max = cvScalar(100, 150, 155, 0);
+	CvScalar hsv_min2 = cvScalar(70, 100, 110, 0);
+	CvScalar hsv_max2 = cvScalar(120, 180, 156, 0);
 
 	// converte para HSV, sim o parametro eh CV_BGR2HSV e nao CV_RGB2HSV! 
 	cvCvtColor(frame, hsv_frame, CV_BGR2HSV);
