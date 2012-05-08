@@ -3,9 +3,9 @@
 #include <cv.h>
 #include <highgui.h>
 
-int _initialH = 8;
-int _initialS = 64;
-int _initialV = 161;
+int _initialH = 20;
+int _initialS = 100;
+int _initialV = 100;
 
 int _finalH = 30;
 int _finalS = 255;
